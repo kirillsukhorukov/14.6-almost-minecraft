@@ -3,7 +3,7 @@
 using namespace std;
 
 //Процедура вывода массива
-void print_array (const int array [5][5])
+void print_array (const int (&array) [5][5])
 {
     for (int i=0; i<5; i++)
     {
@@ -14,7 +14,7 @@ void print_array (const int array [5][5])
 }
 
 //Процедура вывода среза
-void print_slice (const bool array[5][5][10], const int &level)
+void print_slice (const bool (&array)[5][5][10], const int &level)
 {
     cout << "Slice " << level << " level: " << endl;
     for (int i = 0; i < 5; i++)
